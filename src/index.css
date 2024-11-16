@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  width: 100%;
+  min-height: 100dvh;
+}
+
+/* Опционально: стили для цветовой схемы */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: theme("colors.gray.800");
+    background-color: theme("colors.white");
+  }
+}
